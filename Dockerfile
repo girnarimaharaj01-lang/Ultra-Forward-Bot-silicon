@@ -1,9 +1,8 @@
-FROM python:3.10.8-slim-buster
+FROM python:3.8-slim-buster
 
 
 RUN apt update &&     apt install python3 python3-pip -y 
 
-CMD ["/bin/bash", "/start.sh"] 
 
 RUN apt install git -y
 RUN apt installgit clone https://github.com/Silicon-Developer/Ultra-Forward-Bot.git
