@@ -3,7 +3,7 @@ FROM python:3.10.8-slim-buster
 
 RUN apt update &&     apt install python3 python3-pip -y 
 
-RUN apt update && apt upgrade -y
+
 RUN apt install git -y
 RUN apt installgit clone https://github.com/Silicon-Developer/Ultra-Forward-Bot.git
 COPY requirements.txt /requirements.txt
