@@ -1,5 +1,6 @@
 FROM python:3.10.8-slim-buster
 
+RUN apt update &&     apt install python3 python3-pip -y &&     apt install nginx supervisor -y
 RUN apt update && apt upgrade -y
 RUN apt install git -y
 COPY requirements.txt /requirements.txt
